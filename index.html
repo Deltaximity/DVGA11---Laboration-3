@@ -4,11 +4,48 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Inter - Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
+    <script src="labb3.js" defer></script>
     <script src="main.js" defer></script>
     <title>Laboration 3</title>
 </head>
 <body>
-    
+    <div id="notice"><p>Ingredienser med risk för allergi markeras med <strong>fetstil</strong></p></div>
+    <main>
+        <div class="container">
+            <!-- meny skrivs ut från javascript -->
+            <!-- <div class="category">
+                <h1>Pizza klass 1</h1>
+                <div class="item">
+                    <div>
+                        <h2>Margharita</h2>
+                        <span class="price">65:-</span>
+                        <p class="contents">Tomatsås, Ost</p>
+                    </div>
+                    <div class="controls">
+                        <div class="remove">-</div>
+                        <div class="quantity">0</div>
+                        <div class="add">+</div>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+        <div>
+            <h1>Notering</h1>
+            <textarea name="note" id="note" rows="5"></textarea>
+        </div>
+    </main>
+    <nav>
+        <div>
+            <p>Antal föremål: 0</p>
+            <p>Totalt: <strong>0:-</strong></p>
+        </div>
+        <button>Slutför order</button>
+    </nav>
 </body>
 </html>

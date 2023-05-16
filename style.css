@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* VARIABLER */
+:root {
+    --font-sanserif: 'Inter', sans-serif;
+    --color-primary: #A67979;
+    --color-gray: #707070;
+    --color-lighgray: #D9D9D9;
+    --color-bg: #F5F5F5;
+    --color-text: #FFFFFF;
+
+    --global-margin: 15px;
+    --global-border-radius: 5px;
+}
+
+html {
+    font-size: calc(1rem * 0.625);
+}
+
+body {
+    font-family: var(--font-sanserif);
+    background-color: var(--color-bg);
+}
+
+main { padding: 0 15px; }
+
+/* TEXT */
+p { font-size: 1.4rem; }
+h1 { font-size: 2.4rem; margin: 30px 0 10px 0; }
+h2 { font-size: 2rem; display: inline-block; }
+input { font-size: 1.4rem; }
+
+#notice {
+    width: 100%;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-primary);
+    color: var(--color-text);
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+.category .item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color-text);
+    border-radius: var(--global-border-radius);
+    padding: var(--global-margin);
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.category .item .price {
+    font-weight: bold;
+    font-size: 2rem;
+    margin-left: 10px;
+    color: var(--color-primary);
+}
+
+.category .item .contents {
+    margin-top: 5px;
+}
+
+.controls {
+    display: flex;
+}
+
+#note {
+    font-size: 2rem;
+    padding: var(--global-margin);
+    font-family: var(--font-sanserif);
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+nav {
+    background-color: var(--color-text);
+    position: sticky;
+    width: 100%;
+    height: 110px;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    padding: var(--global-margin);
+    border-radius: 20px 20px 0 0;
+    box-shadow: 0 -10px 25px 0 #0002;
+}
+
+nav div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+nav button {
+    font-size: 2rem;
+    font-weight: bold;
+    border: none;
+    background: var(--color-primary);
+    color: var(--color-text);
+    border-radius: var(--global-border-radius);
+    width: 100%;
+    height: 100%;
+}
