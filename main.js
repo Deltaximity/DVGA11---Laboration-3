@@ -98,7 +98,10 @@ window.addEventListener('load', () => {
             receipt.insertAdjacentHTML("beforeend", `<p>---------------------</p>`);
             receipt.insertAdjacentHTML("beforeend", `<div><p><strong>Notering:</strong></p></div>`);
             if (orderNote !== "") {
-                receipt.insertAdjacentHTML("beforeend", `<div><p>${orderNote}</p></div>`);
+                receipt.insertAdjacentHTML("beforeend", `<div><p class="note"></p></div>`);
+                let noteRef = document.querySelector('.note');
+                let noteTextNode = document.createTextNode(orderNote);
+                noteRef.appendChild(noteTextNode);
             } else {
                 receipt.insertAdjacentHTML("beforeend", `<div><p>-</p></div>`)
             }
