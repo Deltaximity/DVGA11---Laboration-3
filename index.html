@@ -15,25 +15,29 @@
     <title>Laboration 3</title>
 </head>
 <body>
+    <div id="confirmation-modal">
+        <div>
+            <h1>Order slutförd</h1>
+            <p>Totalt: <span><span id="total-price">0</span>:-</span></p>
+        </div>
+        <div>
+            <button id="show-receipt">Visa kvitto</button>
+            <button onclick="location.replace(location.href)">Ny order</button>
+        </div>
+    </div>
+    <div id="receipt-modal">
+        <div>
+            <h1>Kvitto</h1>
+            <button id="close-receipt">x</button>
+        </div>
+        <ul id="receipt">
+            <!-- genereras från javascript -->
+        </ul>
+    </div>
     <div id="notice"><p>Ingredienser med risk för allergi markeras med <strong>fetstil</strong></p></div>
     <main>
         <div class="container">
             <!-- meny skrivs ut från javascript -->
-            <!-- <div class="category">
-                <h1>Pizza klass 1</h1>
-                <div class="item">
-                    <div>
-                        <h2>Margharita</h2>
-                        <span class="price">65:-</span>
-                        <p class="contents">Tomatsås, Ost</p>
-                    </div>
-                    <div class="controls">
-                        <div class="remove">-</div>
-                        <div class="quantity">0</div>
-                        <div class="add">+</div>
-                    </div>
-                </div>
-            </div> -->
         </div>
         <div>
             <h1>Notering</h1>
@@ -42,10 +46,10 @@
     </main>
     <nav>
         <div>
-            <p>Antal föremål: 0</p>
-            <p>Totalt: <strong>0:-</strong></p>
+            <p>Antal föremål: <span id="total-items">0</span></p>
+            <p>Totalt: <strong><span id="total-cost">0</span>:-</strong></p>
         </div>
-        <button>Slutför order</button>
+        <button id="confirm-order">Slutför order</button>
     </nav>
 </body>
 </html>
