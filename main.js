@@ -59,7 +59,6 @@ window.addEventListener('load', () => {
         control.appendChild(removeBtn);
         control.appendChild(quantity);
         control.appendChild(addBtn);
-        // quantity.contentEditable = true; // Kan vara bra att implementera, men ej ett krav
 
         // HÄNDELSELYSSNARE
         addBtn.addEventListener('click', () => {
@@ -143,9 +142,3 @@ function calculateTotal() {
     });
     return totalPrice;
 }
-
-// SKRIV UT CONTROLS + EVENT LISTENERS ✅
-// HÄMTA PRIS PÅ FÖREMÅL MED BUBBLE CAPTURING // ALTERNATIVT GENOM ATT HÄMTA ITEMS ✅
-// SKRIV "SLUTFÖR ORDER" FUNKTIONALITET ✅
-// BERKÄKNA TOTAL SUMMA PÅ KVITTOT ✅
-// SMÅ FINJUSTERINGAR
